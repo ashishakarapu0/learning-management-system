@@ -1,0 +1,915 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mobiles & Electronics - MyStore</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+
+        <nav>
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="../index.html">MyStore</a>
+            </div>
+
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+
+                <li>
+                    <a href="../index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="electronics.html" class="active">
+                        Electronics
+                    </a>
+                </li>
+
+                <li>
+                    <a href="clothes.html">
+                        Clothes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="footwear.html">
+                        Footwear
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../products.html">
+                        Products
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../cart.html">
+                        Cart
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../wishlist.html">
+                        Wishlist
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../login.html">
+                        Login
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- ================= CATEGORY HEADER ================= -->
+        <section class="category-header">
+
+            <div class="category-header-content">
+
+                <p class="category-label">
+                    CATEGORY
+                </p>
+
+                <h1>
+                    Mobiles & Electronics
+                </h1>
+
+                <p>
+                    Explore smartphones, laptops, headphones,
+                    smartwatches and other electronic products.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORY CONTROLS ================= -->
+        <section class="product-controls">
+
+            <!-- Search -->
+            <div class="search-box">
+
+                <label for="electronics-search">
+                    Search Electronics
+                </label>
+
+                <input
+                    type="text"
+                    id="electronics-search"
+                    placeholder="Search electronics..."
+                >
+
+            </div>
+
+
+            <!-- Electronics Type -->
+            <div class="filter-box">
+
+                <label for="electronics-type">
+                    Product Type
+                </label>
+
+                <select id="electronics-type">
+
+                    <option value="all">
+                        All Electronics
+                    </option>
+
+                    <option value="mobiles">
+                        Mobiles
+                    </option>
+
+                    <option value="laptops">
+                        Laptops
+                    </option>
+
+                    <option value="headphones">
+                        Headphones
+                    </option>
+
+                    <option value="smartwatches">
+                        Smartwatches
+                    </option>
+
+                    <option value="accessories">
+                        Accessories
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Sort -->
+            <div class="sort-box">
+
+                <label for="electronics-sort">
+                    Sort By
+                </label>
+
+                <select id="electronics-sort">
+
+                    <option value="default">
+                        Default
+                    </option>
+
+                    <option value="low-high">
+                        Price: Low to High
+                    </option>
+
+                    <option value="high-low">
+                        Price: High to Low
+                    </option>
+
+                    <option value="rating">
+                        Highest Rated
+                    </option>
+
+                </select>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRODUCTS ================= -->
+        <section class="products-section">
+
+            <div
+                class="product-container"
+                id="electronics-container"
+            >
+
+
+                <!-- ================= PRODUCT 1 ================= -->
+                <div
+                    class="product-card"
+                    data-type="mobiles"
+                    data-price="25999"
+                    data-rating="4.5"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="/images/samsung.jpg"
+                            alt="Samsung Galaxy Smartphone"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Mobiles
+                        </p>
+
+                        <h2>
+                            Samsung Galaxy
+                        </h2>
+
+                        <p class="product-description">
+                            Powerful smartphone with a vibrant
+                            display and excellent camera.
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.5
+                        </p>
+
+                        <p class="product-price">
+                            ₹25,999
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="../product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCT 2 ================= -->
+                <div
+                    class="product-card"
+                    data-type="mobiles"
+                    data-price="18999"
+                    data-rating="4.3"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="/images/oneplus.jpg"
+                            alt="OnePlus Smartphone"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Mobiles
+                        </p>
+
+                        <h2>
+                            OnePlus Smartphone
+                        </h2>
+
+                        <p class="product-description">
+                            Fast and smooth smartphone with a
+                            high-quality display.
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.3
+                        </p>
+
+                        <p class="product-price">
+                            ₹18,999
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="../product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCT 3 ================= -->
+                <div
+                    class="product-card"
+                    data-type="laptops"
+                    data-price="45999"
+                    data-rating="4.6"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="/images/HP.jpg"
+                            alt="HP Laptop"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Laptops
+                        </p>
+
+                        <h2>
+                            HP Laptop
+                        </h2>
+
+                        <p class="product-description">
+                            Reliable laptop suitable for study,
+                            office work and entertainment.
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.6
+                        </p>
+
+                        <p class="product-price">
+                            ₹45,999
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="../product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCT 4 ================= -->
+                <div
+                    class="product-card"
+                    data-type="headphones"
+                    data-price="2499"
+                    data-rating="4.4"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="../images/products/headphones.jpg"
+                            alt="Wireless Headphones"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Headphones
+                        </p>
+
+                        <h2>
+                            Wireless Headphones
+                        </h2>
+
+                        <p class="product-description">
+                            Comfortable wireless headphones
+                            with clear and powerful sound.
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.4
+                        </p>
+
+                        <p class="product-price">
+                            ₹2,499
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="../product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCT 5 ================= -->
+                <div
+                    class="product-card"
+                    data-type="smartwatches"
+                    data-price="3499"
+                    data-rating="4.2"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="../images/products/smartwatch.jpg"
+                            alt="Smart Watch"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Smartwatches
+                        </p>
+
+                        <h2>
+                            Smart Watch
+                        </h2>
+
+                        <p class="product-description">
+                            Feature-packed smartwatch for fitness,
+                            notifications and daily activities.
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.2
+                        </p>
+
+                        <p class="product-price">
+                            ₹3,499
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="../product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCT 6 ================= -->
+                <div
+                    class="product-card"
+                    data-type="accessories"
+                    data-price="799"
+                    data-rating="4.1"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="../images/products/charger.jpg"
+                            alt="Fast Charger"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Accessories
+                        </p>
+
+                        <h2>
+                            Fast Charger
+                        </h2>
+
+                        <p class="product-description">
+                            Compact fast charger compatible with
+                            multiple electronic devices.
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.1
+                        </p>
+
+                        <p class="product-price">
+                            ₹799
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="../product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCT 7 ================= -->
+                <div
+                    class="product-card"
+                    data-type="accessories"
+                    data-price="1499"
+                    data-rating="4.5"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="../images/products/powerbank.jpg"
+                            alt="Power Bank"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Accessories
+                        </p>
+
+                        <h2>
+                            20,000mAh Power Bank
+                        </h2>
+
+                        <p class="product-description">
+                            High-capacity portable power bank
+                            for charging devices on the go.
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.5
+                        </p>
+
+                        <p class="product-price">
+                            ₹1,499
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="../product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCT 8 ================= -->
+                <div
+                    class="product-card"
+                    data-type="headphones"
+                    data-price="3999"
+                    data-rating="4.7"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="../images/products/earbuds.jpg"
+                            alt="Wireless Earbuds"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Headphones
+                        </p>
+
+                        <h2>
+                            Wireless Earbuds
+                        </h2>
+
+                        <p class="product-description">
+                            Lightweight wireless earbuds with
+                            immersive sound and a compact case.
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.7
+                        </p>
+
+                        <p class="product-price">
+                            ₹3,999
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="../product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- No Products Message -->
+            <div
+                id="no-electronics"
+                class="no-products"
+                style="display: none;"
+            >
+
+                <h2>
+                    No Electronics Found
+                </h2>
+
+                <p>
+                    Try searching for another electronic product.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORY NAVIGATION ================= -->
+        <section class="category-navigation">
+
+            <h2>
+                Explore Other Categories
+            </h2>
+
+            <div class="category-links">
+
+                <a
+                    href="clothes.html"
+                    class="btn-secondary"
+                >
+                    👕 Clothes
+                </a>
+
+                <a
+                    href="footwear.html"
+                    class="btn-secondary"
+                >
+                    👟 Footwear
+                </a>
+
+                <a
+                    href="../products.html"
+                    class="btn-secondary"
+                >
+                    🛍️ All Products
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-container">
+
+
+            <!-- About -->
+            <div class="footer-column">
+
+                <h3>
+                    MyStore
+                </h3>
+
+                <p>
+                    Your simple online shopping destination
+                    for electronics, clothes, and footwear.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="../products.html">
+                    Products
+                </a>
+
+                <a href="../about.html">
+                    About Us
+                </a>
+
+                <a href="../contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Categories -->
+            <div class="footer-column">
+
+                <h3>
+                    Categories
+                </h3>
+
+                <a href="electronics.html">
+                    Electronics
+                </a>
+
+                <a href="clothes.html">
+                    Clothes
+                </a>
+
+                <a href="footwear.html">
+                    Footwear
+                </a>
+
+            </div>
+
+
+            <!-- Account -->
+            <div class="footer-column">
+
+                <h3>
+                    Account
+                </h3>
+
+                <a href="../login.html">
+                    Login
+                </a>
+
+                <a href="../register.html">
+                    Register
+                </a>
+
+                <a href="../cart.html">
+                    Cart
+                </a>
+
+                <a href="../orders.html">
+                    My Orders
+                </a>
+
+                <a href="../profile.html">
+                    Profile
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 MyStore. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Common JavaScript -->
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

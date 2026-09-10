@@ -1,0 +1,597 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register - MyStore</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+
+        <nav>
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">MyStore</a>
+            </div>
+
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories/electronics.html">
+                        Electronics
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories/clothes.html">
+                        Clothes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories/footwear.html">
+                        Footwear
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html">
+                        Products
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cart.html">
+                        Cart
+                    </a>
+                </li>
+
+                <li>
+                    <a href="login.html">
+                        Login
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= REGISTER SECTION ================= -->
+    <main>
+
+        <section class="register-section">
+
+            <div class="register-container">
+
+                <!-- Registration Heading -->
+                <div class="register-header">
+
+                    <h1>
+                        Create Your Account
+                    </h1>
+
+                    <p>
+                        Join MyStore and start shopping today.
+                    </p>
+
+                </div>
+
+
+                <!-- ================= REGISTER FORM ================= -->
+                <form id="register-form">
+
+
+                    <!-- Full Name -->
+                    <div class="form-group">
+
+                        <label for="full-name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="full-name"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="register-email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="register-email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Phone -->
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Mobile Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your mobile number"
+                            maxlength="10"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="form-group">
+
+                        <label for="register-password">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="register-password"
+                            name="password"
+                            placeholder="Create a password"
+                            minlength="6"
+                            required
+                        >
+
+                        <small>
+                            Password must contain at least 6 characters.
+                        </small>
+
+                    </div>
+
+
+                    <!-- Confirm Password -->
+                    <div class="form-group">
+
+                        <label for="confirm-password">
+                            Confirm Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirm-password"
+                            name="confirmPassword"
+                            placeholder="Re-enter your password"
+                            minlength="6"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Gender -->
+                    <div class="form-group">
+
+                        <label for="gender">
+                            Gender
+                        </label>
+
+                        <select
+                            id="gender"
+                            name="gender"
+                        >
+
+                            <option value="">
+                                Select Gender
+                            </option>
+
+                            <option value="male">
+                                Male
+                            </option>
+
+                            <option value="female">
+                                Female
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                            <option value="prefer-not-to-say">
+                                Prefer not to say
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ================= ADDRESS ================= -->
+                    <h2 class="form-section-title">
+                        Address
+                    </h2>
+
+
+                    <!-- Address -->
+                    <div class="form-group">
+
+                        <label for="address">
+                            Address
+                        </label>
+
+                        <textarea
+                            id="address"
+                            name="address"
+                            rows="4"
+                            placeholder="Enter your complete address"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- City -->
+                    <div class="form-group">
+
+                        <label for="city">
+                            City
+                        </label>
+
+                        <input
+                            type="text"
+                            id="city"
+                            name="city"
+                            placeholder="Enter your city"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- State -->
+                    <div class="form-group">
+
+                        <label for="state">
+                            State
+                        </label>
+
+                        <select
+                            id="state"
+                            name="state"
+                            required
+                        >
+
+                            <option value="">
+                                Select State
+                            </option>
+
+                            <option value="Andhra Pradesh">
+                                Andhra Pradesh
+                            </option>
+
+                            <option value="Arunachal Pradesh">
+                                Arunachal Pradesh
+                            </option>
+
+                            <option value="Assam">
+                                Assam
+                            </option>
+
+                            <option value="Bihar">
+                                Bihar
+                            </option>
+
+                            <option value="Chhattisgarh">
+                                Chhattisgarh
+                            </option>
+
+                            <option value="Delhi">
+                                Delhi
+                            </option>
+
+                            <option value="Gujarat">
+                                Gujarat
+                            </option>
+
+                            <option value="Haryana">
+                                Haryana
+                            </option>
+
+                            <option value="Himachal Pradesh">
+                                Himachal Pradesh
+                            </option>
+
+                            <option value="Jharkhand">
+                                Jharkhand
+                            </option>
+
+                            <option value="Karnataka">
+                                Karnataka
+                            </option>
+
+                            <option value="Kerala">
+                                Kerala
+                            </option>
+
+                            <option value="Madhya Pradesh">
+                                Madhya Pradesh
+                            </option>
+
+                            <option value="Maharashtra">
+                                Maharashtra
+                            </option>
+
+                            <option value="Odisha">
+                                Odisha
+                            </option>
+
+                            <option value="Punjab">
+                                Punjab
+                            </option>
+
+                            <option value="Rajasthan">
+                                Rajasthan
+                            </option>
+
+                            <option value="Tamil Nadu">
+                                Tamil Nadu
+                            </option>
+
+                            <option value="Telangana">
+                                Telangana
+                            </option>
+
+                            <option value="Uttar Pradesh">
+                                Uttar Pradesh
+                            </option>
+
+                            <option value="Uttarakhand">
+                                Uttarakhand
+                            </option>
+
+                            <option value="West Bengal">
+                                West Bengal
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Pincode -->
+                    <div class="form-group">
+
+                        <label for="pincode">
+                            Pincode
+                        </label>
+
+                        <input
+                            type="text"
+                            id="pincode"
+                            name="pincode"
+                            placeholder="Enter 6-digit pincode"
+                            maxlength="6"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- ================= TERMS ================= -->
+                    <div class="terms-group">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            name="terms"
+                            required
+                        >
+
+                        <label for="terms">
+                            I agree to the
+                            <a href="#">
+                                Terms & Conditions
+                            </a>
+                            and
+                            <a href="#">
+                                Privacy Policy
+                            </a>.
+                        </label>
+
+                    </div>
+
+
+                    <!-- Error Message -->
+                    <p
+                        id="register-error"
+                        class="error-message"
+                        style="display: none;"
+                    >
+                        Please check your details and try again.
+                    </p>
+
+
+                    <!-- Success Message -->
+                    <p
+                        id="register-success"
+                        class="success-message"
+                        style="display: none;"
+                    >
+                        Registration successful!
+                    </p>
+
+
+                    <!-- Register Button -->
+                    <button
+                        type="submit"
+                        class="btn register-btn"
+                    >
+                        Create Account
+                    </button>
+
+                </form>
+
+
+                <!-- ================= LOGIN LINK ================= -->
+                <div class="login-link">
+
+                    <p>
+                        Already have an account?
+                        <a href="login.html">
+                            Login here
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-container">
+
+
+            <!-- About -->
+            <div class="footer-column">
+
+                <h3>
+                    MyStore
+                </h3>
+
+                <p>
+                    Your simple online shopping destination
+                    for electronics, clothes, and footwear.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="products.html">
+                    Products
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Categories -->
+            <div class="footer-column">
+
+                <h3>
+                    Categories
+                </h3>
+
+                <a href="categories/electronics.html">
+                    Electronics
+                </a>
+
+                <a href="categories/clothes.html">
+                    Clothes
+                </a>
+
+                <a href="categories/footwear.html">
+                    Footwear
+                </a>
+
+            </div>
+
+
+            <!-- Account -->
+            <div class="footer-column">
+
+                <h3>
+                    Account
+                </h3>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="register.html">
+                    Register
+                </a>
+
+                <a href="cart.html">
+                    Cart
+                </a>
+
+                <a href="orders.html">
+                    My Orders
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 MyStore. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Common JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

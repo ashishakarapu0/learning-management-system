@@ -1,0 +1,321 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us - MyStore</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+
+        <nav>
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">MyStore</a>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="categories/electronics.html">
+                        Electronics
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories/clothes.html">
+                        Clothes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories/footwear.html">
+                        Footwear
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cart.html">
+                        Cart
+                    </a>
+                </li>
+
+                <li>
+                    <a href="login.html">
+                        Login
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= CONTACT PAGE ================= -->
+    <main>
+
+        <section class="contact-section">
+
+            <div class="contact-container">
+
+                <!-- Page Heading -->
+                <div class="contact-header">
+
+                    <h1>Contact Us</h1>
+
+                    <p>
+                        Have a question or need help?
+                        We'd love to hear from you.
+                    </p>
+
+                </div>
+
+
+                <!-- Contact Content -->
+                <div class="contact-content">
+
+
+                    <!-- ================= CONTACT INFORMATION ================= -->
+                    <div class="contact-info">
+
+                        <h2>Get in Touch</h2>
+
+                        <p>
+                            If you have any questions about our products,
+                            orders, or services, feel free to contact us.
+                        </p>
+
+
+                        <!-- Address -->
+                        <div class="contact-item">
+
+                            <h3>📍 Address</h3>
+
+                            <p>
+                                MyStore<br>
+                                Main Street<br>
+                                Hyderabad, Telangana<br>
+                                India
+                            </p>
+
+                        </div>
+
+
+                        <!-- Phone -->
+                        <div class="contact-item">
+
+                            <h3>📞 Phone</h3>
+
+                            <p>
+                                +91 98765 43210
+                            </p>
+
+                        </div>
+
+
+                        <!-- Email -->
+                        <div class="contact-item">
+
+                            <h3>✉️ Email</h3>
+
+                            <p>
+                                support@mystore.com
+                            </p>
+
+                        </div>
+
+
+                        <!-- Working Hours -->
+                        <div class="contact-item">
+
+                            <h3>🕒 Working Hours</h3>
+
+                            <p>
+                                Monday - Saturday<br>
+                                9:00 AM - 6:00 PM
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= CONTACT FORM ================= -->
+                    <div class="contact-form">
+
+                        <h2>Send Us a Message</h2>
+
+
+                        <form id="contact-form">
+
+
+                            <!-- Name -->
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Enter your name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- Email -->
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email Address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- Phone -->
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Mobile Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="Enter your mobile number"
+                                    maxlength="10"
+                                >
+
+                            </div>
+
+
+                            <!-- Subject -->
+                            <div class="form-group">
+
+                                <label for="subject">
+                                    Subject
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="subject"
+                                    name="subject"
+                                    placeholder="Enter subject"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- Message -->
+                            <div class="form-group">
+
+                                <label for="message">
+                                    Message
+                                </label>
+
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="6"
+                                    placeholder="Write your message here..."
+                                    required
+                                ></textarea>
+
+                            </div>
+
+
+                            <!-- Submit Button -->
+                            <button
+                                type="submit"
+                                class="btn"
+                            >
+                                Send Message
+                            </button>
+
+                        </form>
+
+
+                        <!-- Success Message -->
+                        <p
+                            id="contact-success"
+                            style="display: none;"
+                        >
+                            Thank you! Your message has been submitted
+                            successfully.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <p>
+            &copy; 2026 MyStore. All Rights Reserved.
+        </p>
+
+
+        <div class="footer-links">
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Common JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

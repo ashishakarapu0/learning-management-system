@@ -1,0 +1,883 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products - MyStore</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+
+        <nav>
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">MyStore</a>
+            </div>
+
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories/electronics.html">
+                        Electronics
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories/clothes.html">
+                        Clothes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories/footwear.html">
+                        Footwear
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html" class="active">
+                        Products
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cart.html">
+                        Cart
+                    </a>
+                </li>
+
+                <li>
+                    <a href="login.html">
+                        Login
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- ================= PRODUCTS HEADER ================= -->
+        <section class="products-header">
+
+            <h1>
+                All Products
+            </h1>
+
+            <p>
+                Explore our collection of electronics, clothes,
+                and footwear.
+            </p>
+
+        </section>
+
+
+        <!-- ================= SEARCH AND FILTER ================= -->
+        <section class="product-controls">
+
+            <div class="search-box">
+
+                <label for="product-search">
+                    Search Products
+                </label>
+
+                <input
+                    type="text"
+                    id="product-search"
+                    placeholder="Search for a product..."
+                >
+
+            </div>
+
+
+            <div class="filter-box">
+
+                <label for="category-filter">
+                    Category
+                </label>
+
+                <select id="category-filter">
+
+                    <option value="all">
+                        All Categories
+                    </option>
+
+                    <option value="electronics">
+                        Mobiles & Electronics
+                    </option>
+
+                    <option value="clothes">
+                        Clothes
+                    </option>
+
+                    <option value="footwear">
+                        Footwear
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="sort-box">
+
+                <label for="sort-products">
+                    Sort By
+                </label>
+
+                <select id="sort-products">
+
+                    <option value="default">
+                        Default
+                    </option>
+
+                    <option value="low-high">
+                        Price: Low to High
+                    </option>
+
+                    <option value="high-low">
+                        Price: High to Low
+                    </option>
+
+                    <option value="rating">
+                        Highest Rated
+                    </option>
+
+                </select>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRODUCT LIST ================= -->
+        <section class="products-section">
+
+            <div class="product-container" id="product-container">
+
+
+                <!-- ================= PRODUCT 1 ================= -->
+                <div
+                    class="product-card"
+                    data-category="electronics"
+                    data-price="25999"
+                    data-rating="4.5"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/products/phone.jpg"
+                            alt="Samsung Galaxy"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h2>
+                            Samsung Galaxy
+                        </h2>
+
+                        <p class="product-category">
+                            Mobiles & Electronics
+                        </p>
+
+                        <p class="product-price">
+                            ₹25,999
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.5
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCT 2 ================= -->
+                <div
+                    class="product-card"
+                    data-category="electronics"
+                    data-price="2499"
+                    data-rating="4.4"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/products/headphones.jpg"
+                            alt="Wireless Headphones"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h2>
+                            Wireless Headphones
+                        </h2>
+
+                        <p class="product-category">
+                            Mobiles & Electronics
+                        </p>
+
+                        <p class="product-price">
+                            ₹2,499
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.4
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCT 3 ================= -->
+                <div
+                    class="product-card"
+                    data-category="electronics"
+                    data-price="45999"
+                    data-rating="4.6"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/products/laptop.jpg"
+                            alt="Laptop"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h2>
+                            HP Laptop
+                        </h2>
+
+                        <p class="product-category">
+                            Mobiles & Electronics
+                        </p>
+
+                        <p class="product-price">
+                            ₹45,999
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.6
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCT 4 ================= -->
+                <div
+                    class="product-card"
+                    data-category="clothes"
+                    data-price="1299"
+                    data-rating="4.3"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/products/shirt.jpg"
+                            alt="Men's Casual Shirt"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h2>
+                            Men's Casual Shirt
+                        </h2>
+
+                        <p class="product-category">
+                            Clothes
+                        </p>
+
+                        <p class="product-price">
+                            ₹1,299
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.3
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCT 5 ================= -->
+                <div
+                    class="product-card"
+                    data-category="clothes"
+                    data-price="1899"
+                    data-rating="4.5"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/products/jeans.jpg"
+                            alt="Men's Jeans"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h2>
+                            Men's Jeans
+                        </h2>
+
+                        <p class="product-category">
+                            Clothes
+                        </p>
+
+                        <p class="product-price">
+                            ₹1,899
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.5
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCT 6 ================= -->
+                <div
+                    class="product-card"
+                    data-category="clothes"
+                    data-price="1599"
+                    data-rating="4.2"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/products/dress.jpg"
+                            alt="Women's Dress"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h2>
+                            Women's Dress
+                        </h2>
+
+                        <p class="product-category">
+                            Clothes
+                        </p>
+
+                        <p class="product-price">
+                            ₹1,599
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.2
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCT 7 ================= -->
+                <div
+                    class="product-card"
+                    data-category="footwear"
+                    data-price="3499"
+                    data-rating="4.6"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/products/shoes.jpg"
+                            alt="Nike Running Shoes"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h2>
+                            Nike Running Shoes
+                        </h2>
+
+                        <p class="product-category">
+                            Footwear
+                        </p>
+
+                        <p class="product-price">
+                            ₹3,499
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.6
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCT 8 ================= -->
+                <div
+                    class="product-card"
+                    data-category="footwear"
+                    data-price="2299"
+                    data-rating="4.3"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/products/sneakers.jpg"
+                            alt="Casual Sneakers"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h2>
+                            Casual Sneakers
+                        </h2>
+
+                        <p class="product-category">
+                            Footwear
+                        </p>
+
+                        <p class="product-price">
+                            ₹2,299
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.3
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCT 9 ================= -->
+                <div
+                    class="product-card"
+                    data-category="footwear"
+                    data-price="999"
+                    data-rating="4.1"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/products/slippers.jpg"
+                            alt="Comfortable Slippers"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <h2>
+                            Comfortable Slippers
+                        </h2>
+
+                        <p class="product-category">
+                            Footwear
+                        </p>
+
+                        <p class="product-price">
+                            ₹999
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.1
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- No Products Message -->
+            <div
+                id="no-products"
+                class="no-products"
+                style="display: none;"
+            >
+
+                <h2>
+                    No Products Found
+                </h2>
+
+                <p>
+                    Try searching for a different product
+                    or category.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BACK TO HOME ================= -->
+        <div class="back-to-home">
+
+            <a
+                href="index.html"
+                class="btn-secondary"
+            >
+                ← Back to Home
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-container">
+
+
+            <!-- About -->
+            <div class="footer-column">
+
+                <h3>
+                    MyStore
+                </h3>
+
+                <p>
+                    Your simple online shopping destination
+                    for electronics, clothes, and footwear.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="products.html">
+                    Products
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Categories -->
+            <div class="footer-column">
+
+                <h3>
+                    Categories
+                </h3>
+
+                <a href="categories/electronics.html">
+                    Electronics
+                </a>
+
+                <a href="categories/clothes.html">
+                    Clothes
+                </a>
+
+                <a href="categories/footwear.html">
+                    Footwear
+                </a>
+
+            </div>
+
+
+            <!-- Account -->
+            <div class="footer-column">
+
+                <h3>
+                    Account
+                </h3>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="register.html">
+                    Register
+                </a>
+
+                <a href="cart.html">
+                    Cart
+                </a>
+
+                <a href="orders.html">
+                    My Orders
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 MyStore. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Common JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

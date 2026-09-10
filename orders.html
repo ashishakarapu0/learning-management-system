@@ -1,0 +1,495 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Orders - MyStore</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+
+        <nav>
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">MyStore</a>
+            </div>
+
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories/electronics.html">
+                        Electronics
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories/clothes.html">
+                        Clothes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories/footwear.html">
+                        Footwear
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cart.html">
+                        Cart
+                    </a>
+                </li>
+
+                <li>
+                    <a href="orders.html" class="active">
+                        My Orders
+                    </a>
+                </li>
+
+                <li>
+                    <a href="login.html">
+                        Login
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= ORDERS PAGE ================= -->
+    <main>
+
+        <section class="orders-section">
+
+            <div class="orders-container">
+
+                <!-- Page Heading -->
+                <div class="orders-header">
+
+                    <h1>
+                        My Orders
+                    </h1>
+
+                    <p>
+                        View and track your recent orders.
+                    </p>
+
+                </div>
+
+
+                <!-- ================= ORDER 1 ================= -->
+                <div class="order-card">
+
+                    <!-- Order Header -->
+                    <div class="order-header">
+
+                        <div>
+
+                            <p>
+                                <strong>Order ID:</strong>
+                                #MS1001
+                            </p>
+
+                            <p>
+                                <strong>Order Date:</strong>
+                                September 5, 2026
+                            </p>
+
+                        </div>
+
+                        <div class="order-status delivered">
+                            Delivered
+                        </div>
+
+                    </div>
+
+
+                    <!-- Order Product -->
+                    <div class="order-product">
+
+                        <div class="order-product-image">
+
+                            <img
+                                src="images/products/phone.jpg"
+                                alt="Samsung Galaxy"
+                            >
+
+                        </div>
+
+
+                        <div class="order-product-info">
+
+                            <h2>
+                                Samsung Galaxy
+                            </h2>
+
+                            <p>
+                                Mobiles & Electronics
+                            </p>
+
+                            <p>
+                                Quantity: 1
+                            </p>
+
+                            <p class="product-price">
+                                ₹25,999
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Order Footer -->
+                    <div class="order-footer">
+
+                        <p>
+                            <strong>Total:</strong>
+                            ₹25,999
+                        </p>
+
+                        <button
+                            type="button"
+                            class="btn-secondary"
+                        >
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= ORDER 2 ================= -->
+                <div class="order-card">
+
+                    <!-- Order Header -->
+                    <div class="order-header">
+
+                        <div>
+
+                            <p>
+                                <strong>Order ID:</strong>
+                                #MS1002
+                            </p>
+
+                            <p>
+                                <strong>Order Date:</strong>
+                                September 7, 2026
+                            </p>
+
+                        </div>
+
+                        <div class="order-status processing">
+                            Processing
+                        </div>
+
+                    </div>
+
+
+                    <!-- Order Product -->
+                    <div class="order-product">
+
+                        <div class="order-product-image">
+
+                            <img
+                                src="images/products/shoes.jpg"
+                                alt="Nike Running Shoes"
+                            >
+
+                        </div>
+
+
+                        <div class="order-product-info">
+
+                            <h2>
+                                Nike Running Shoes
+                            </h2>
+
+                            <p>
+                                Footwear
+                            </p>
+
+                            <p>
+                                Quantity: 1
+                            </p>
+
+                            <p class="product-price">
+                                ₹3,499
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Order Footer -->
+                    <div class="order-footer">
+
+                        <p>
+                            <strong>Total:</strong>
+                            ₹3,499
+                        </p>
+
+                        <button
+                            type="button"
+                            class="btn-secondary"
+                        >
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= ORDER 3 ================= -->
+                <div class="order-card">
+
+                    <!-- Order Header -->
+                    <div class="order-header">
+
+                        <div>
+
+                            <p>
+                                <strong>Order ID:</strong>
+                                #MS1003
+                            </p>
+
+                            <p>
+                                <strong>Order Date:</strong>
+                                September 8, 2026
+                            </p>
+
+                        </div>
+
+                        <div class="order-status shipped">
+                            Shipped
+                        </div>
+
+                    </div>
+
+
+                    <!-- Order Product -->
+                    <div class="order-product">
+
+                        <div class="order-product-image">
+
+                            <img
+                                src="images/products/shirt.jpg"
+                                alt="Men's Casual Shirt"
+                            >
+
+                        </div>
+
+
+                        <div class="order-product-info">
+
+                            <h2>
+                                Men's Casual Shirt
+                            </h2>
+
+                            <p>
+                                Clothes
+                            </p>
+
+                            <p>
+                                Quantity: 2
+                            </p>
+
+                            <p class="product-price">
+                                ₹2,598
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Order Footer -->
+                    <div class="order-footer">
+
+                        <p>
+                            <strong>Total:</strong>
+                            ₹2,598
+                        </p>
+
+                        <button
+                            type="button"
+                            class="btn-secondary"
+                        >
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= EMPTY ORDERS ================= -->
+                <div
+                    class="empty-orders"
+                    id="empty-orders"
+                    style="display: none;"
+                >
+
+                    <h2>
+                        No Orders Yet
+                    </h2>
+
+                    <p>
+                        You haven't placed any orders yet.
+                        Start shopping to see your orders here.
+                    </p>
+
+                    <a
+                        href="products.html"
+                        class="btn"
+                    >
+                        Start Shopping
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-container">
+
+
+            <!-- About -->
+            <div class="footer-column">
+
+                <h3>
+                    MyStore
+                </h3>
+
+                <p>
+                    Your simple online shopping destination
+                    for electronics, clothes, and footwear.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="products.html">
+                    Products
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Categories -->
+            <div class="footer-column">
+
+                <h3>
+                    Categories
+                </h3>
+
+                <a href="categories/electronics.html">
+                    Electronics
+                </a>
+
+                <a href="categories/clothes.html">
+                    Clothes
+                </a>
+
+                <a href="categories/footwear.html">
+                    Footwear
+                </a>
+
+            </div>
+
+
+            <!-- Account -->
+            <div class="footer-column">
+
+                <h3>
+                    Account
+                </h3>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="register.html">
+                    Register
+                </a>
+
+                <a href="cart.html">
+                    Cart
+                </a>
+
+                <a href="orders.html">
+                    My Orders
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 MyStore. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Common JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

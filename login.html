@@ -1,0 +1,306 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - MyStore</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+
+        <nav>
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">MyStore</a>
+            </div>
+
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories/electronics.html">
+                        Electronics
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories/clothes.html">
+                        Clothes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories/footwear.html">
+                        Footwear
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cart.html">
+                        Cart
+                    </a>
+                </li>
+
+                <li>
+                    <a href="login.html" class="active">
+                        Login
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= LOGIN SECTION ================= -->
+    <main>
+
+        <section class="login-section">
+
+            <div class="login-container">
+
+                <!-- Login Heading -->
+                <div class="login-header">
+
+                    <h1>
+                        Welcome Back!
+                    </h1>
+
+                    <p>
+                        Login to your MyStore account
+                    </p>
+
+                </div>
+
+
+                <!-- Login Form -->
+                <form id="login-form">
+
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="form-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            minlength="6"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Remember Me -->
+                    <div class="login-options">
+
+                        <div class="checkbox-group">
+
+                            <input
+                                type="checkbox"
+                                id="remember"
+                                name="remember"
+                            >
+
+                            <label for="remember">
+                                Remember me
+                            </label>
+
+                        </div>
+
+
+                        <a href="#">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+
+                    <!-- Login Button -->
+                    <button
+                        type="submit"
+                        class="btn login-btn"
+                    >
+                        Login
+                    </button>
+
+
+                    <!-- Error Message -->
+                    <p
+                        id="login-error"
+                        class="error-message"
+                        style="display: none;"
+                    >
+                        Invalid email or password.
+                    </p>
+
+                </form>
+
+
+                <!-- Register Link -->
+                <div class="register-link">
+
+                    <p>
+                        Don't have an account?
+                        <a href="register.html">
+                            Create an Account
+                        </a>
+                    </p>
+
+                </div>
+
+
+                <!-- Demo Login Information -->
+                <div class="demo-login">
+
+                    <h3>
+                        Demo Account
+                    </h3>
+
+                    <p>
+                        You can use a registered account
+                        to practice the login functionality.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-container">
+
+            <!-- About -->
+            <div class="footer-column">
+
+                <h3>
+                    MyStore
+                </h3>
+
+                <p>
+                    Your simple online shopping destination
+                    for electronics, clothes, and footwear.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="products.html">
+                    Products
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Account -->
+            <div class="footer-column">
+
+                <h3>
+                    Account
+                </h3>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="register.html">
+                    Register
+                </a>
+
+                <a href="cart.html">
+                    Cart
+                </a>
+
+                <a href="orders.html">
+                    My Orders
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 MyStore. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Common JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,425 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout - MyStore</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+
+        <nav>
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">MyStore</a>
+            </div>
+
+            <!-- Navigation -->
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="categories/electronics.html">
+                        Electronics
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories/clothes.html">
+                        Clothes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories/footwear.html">
+                        Footwear
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cart.html">
+                        Cart
+                    </a>
+                </li>
+
+                <li>
+                    <a href="login.html">
+                        Login
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= CHECKOUT ================= -->
+    <main>
+
+        <section class="checkout-section">
+
+            <div class="checkout-container">
+
+                <h1>Checkout</h1>
+
+
+                <!-- ================= SHIPPING DETAILS ================= -->
+                <div class="checkout-content">
+
+
+                    <div class="shipping-details">
+
+                        <h2>Delivery Details</h2>
+
+
+                        <form id="checkout-form">
+
+                            <!-- Full Name -->
+                            <div class="form-group">
+
+                                <label for="full-name">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="full-name"
+                                    name="fullName"
+                                    placeholder="Enter your full name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- Email -->
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email Address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- Phone -->
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Mobile Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="Enter your mobile number"
+                                    maxlength="10"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- Address -->
+                            <div class="form-group">
+
+                                <label for="address">
+                                    Address
+                                </label>
+
+                                <textarea
+                                    id="address"
+                                    name="address"
+                                    rows="4"
+                                    placeholder="Enter your complete address"
+                                    required
+                                ></textarea>
+
+                            </div>
+
+
+                            <!-- City -->
+                            <div class="form-group">
+
+                                <label for="city">
+                                    City
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="city"
+                                    name="city"
+                                    placeholder="Enter your city"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- State -->
+                            <div class="form-group">
+
+                                <label for="state">
+                                    State
+                                </label>
+
+                                <select
+                                    id="state"
+                                    name="state"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select State
+                                    </option>
+
+                                    <option value="Andhra Pradesh">
+                                        Andhra Pradesh
+                                    </option>
+
+                                    <option value="Telangana">
+                                        Telangana
+                                    </option>
+
+                                    <option value="Karnataka">
+                                        Karnataka
+                                    </option>
+
+                                    <option value="Tamil Nadu">
+                                        Tamil Nadu
+                                    </option>
+
+                                    <option value="Kerala">
+                                        Kerala
+                                    </option>
+
+                                    <option value="Maharashtra">
+                                        Maharashtra
+                                    </option>
+
+                                    <option value="Delhi">
+                                        Delhi
+                                    </option>
+
+                                    <option value="Gujarat">
+                                        Gujarat
+                                    </option>
+
+                                    <option value="Rajasthan">
+                                        Rajasthan
+                                    </option>
+
+                                    <option value="West Bengal">
+                                        West Bengal
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- Pincode -->
+                            <div class="form-group">
+
+                                <label for="pincode">
+                                    Pincode
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="pincode"
+                                    name="pincode"
+                                    placeholder="Enter 6-digit pincode"
+                                    maxlength="6"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- Save Address -->
+                            <div class="checkbox-group">
+
+                                <input
+                                    type="checkbox"
+                                    id="save-address"
+                                    name="saveAddress"
+                                >
+
+                                <label for="save-address">
+                                    Save this address for future orders
+                                </label>
+
+                            </div>
+
+
+                            <!-- Continue to Payment -->
+                            <button
+                                type="submit"
+                                class="btn"
+                            >
+                                Continue to Payment
+                            </button>
+
+                        </form>
+
+                    </div>
+
+
+                    <!-- ================= ORDER SUMMARY ================= -->
+                    <div class="checkout-summary">
+
+                        <h2>Order Summary</h2>
+
+
+                        <!-- Product 1 -->
+                        <div class="checkout-product">
+
+                            <div class="checkout-product-info">
+
+                                <h3>Samsung Galaxy</h3>
+
+                                <p>
+                                    Quantity: 1
+                                </p>
+
+                            </div>
+
+                            <span>
+                                ₹25,999
+                            </span>
+
+                        </div>
+
+
+                        <!-- Product 2 -->
+                        <div class="checkout-product">
+
+                            <div class="checkout-product-info">
+
+                                <h3>Nike Running Shoes</h3>
+
+                                <p>
+                                    Quantity: 1
+                                </p>
+
+                            </div>
+
+                            <span>
+                                ₹3,499
+                            </span>
+
+                        </div>
+
+
+                        <hr>
+
+
+                        <!-- Subtotal -->
+                        <div class="summary-row">
+
+                            <span>
+                                Subtotal
+                            </span>
+
+                            <span id="checkout-subtotal">
+                                ₹29,498
+                            </span>
+
+                        </div>
+
+
+                        <!-- Delivery -->
+                        <div class="summary-row">
+
+                            <span>
+                                Delivery
+                            </span>
+
+                            <span id="checkout-delivery">
+                                Free
+                            </span>
+
+                        </div>
+
+
+                        <!-- Total -->
+                        <div class="summary-row total-row">
+
+                            <strong>
+                                Total
+                            </strong>
+
+                            <strong id="checkout-total">
+                                ₹29,498
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <p>
+            &copy; 2026 MyStore. All Rights Reserved.
+        </p>
+
+
+        <div class="footer-links">
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Common JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

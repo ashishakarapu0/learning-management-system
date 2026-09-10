@@ -1,0 +1,915 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Footwear - MyStore</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+
+        <nav>
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="../index.html">MyStore</a>
+            </div>
+
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+
+                <li>
+                    <a href="../index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="electronics.html">
+                        Electronics
+                    </a>
+                </li>
+
+                <li>
+                    <a href="clothes.html">
+                        Clothes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="footwear.html" class="active">
+                        Footwear
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../products.html">
+                        Products
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../cart.html">
+                        Cart
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../wishlist.html">
+                        Wishlist
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../login.html">
+                        Login
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- ================= CATEGORY HEADER ================= -->
+        <section class="category-header">
+
+            <div class="category-header-content">
+
+                <p class="category-label">
+                    CATEGORY
+                </p>
+
+                <h1>
+                    Footwear
+                </h1>
+
+                <p>
+                    Find comfortable and stylish footwear
+                    for every occasion.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORY CONTROLS ================= -->
+        <section class="product-controls">
+
+            <!-- Search -->
+            <div class="search-box">
+
+                <label for="footwear-search">
+                    Search Footwear
+                </label>
+
+                <input
+                    type="text"
+                    id="footwear-search"
+                    placeholder="Search footwear..."
+                >
+
+            </div>
+
+
+            <!-- Footwear Type -->
+            <div class="filter-box">
+
+                <label for="footwear-type">
+                    Footwear Type
+                </label>
+
+                <select id="footwear-type">
+
+                    <option value="all">
+                        All Footwear
+                    </option>
+
+                    <option value="running-shoes">
+                        Running Shoes
+                    </option>
+
+                    <option value="sneakers">
+                        Sneakers
+                    </option>
+
+                    <option value="formal-shoes">
+                        Formal Shoes
+                    </option>
+
+                    <option value="sandals">
+                        Sandals
+                    </option>
+
+                    <option value="slippers">
+                        Slippers
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Sort -->
+            <div class="sort-box">
+
+                <label for="footwear-sort">
+                    Sort By
+                </label>
+
+                <select id="footwear-sort">
+
+                    <option value="default">
+                        Default
+                    </option>
+
+                    <option value="low-high">
+                        Price: Low to High
+                    </option>
+
+                    <option value="high-low">
+                        Price: High to Low
+                    </option>
+
+                    <option value="rating">
+                        Highest Rated
+                    </option>
+
+                </select>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRODUCTS ================= -->
+        <section class="products-section">
+
+            <div
+                class="product-container"
+                id="footwear-container"
+            >
+
+
+                <!-- ================= PRODUCT 1 ================= -->
+                <div
+                    class="product-card"
+                    data-type="running-shoes"
+                    data-price="3499"
+                    data-rating="4.6"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="../images/products/shoes.jpg"
+                            alt="Nike Running Shoes"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Running Shoes
+                        </p>
+
+                        <h2>
+                            Nike Running Shoes
+                        </h2>
+
+                        <p class="product-description">
+                            Lightweight running shoes designed
+                            for comfort and daily workouts.
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.6
+                        </p>
+
+                        <p class="product-price">
+                            ₹3,499
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="../product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCT 2 ================= -->
+                <div
+                    class="product-card"
+                    data-type="sneakers"
+                    data-price="2299"
+                    data-rating="4.3"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="../images/products/sneakers.jpg"
+                            alt="Casual Sneakers"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Sneakers
+                        </p>
+
+                        <h2>
+                            Casual Sneakers
+                        </h2>
+
+                        <p class="product-description">
+                            Stylish everyday sneakers with a
+                            comfortable and modern design.
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.3
+                        </p>
+
+                        <p class="product-price">
+                            ₹2,299
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="../product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCT 3 ================= -->
+                <div
+                    class="product-card"
+                    data-type="formal-shoes"
+                    data-price="2999"
+                    data-rating="4.4"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="../images/products/formal-shoes.jpg"
+                            alt="Men's Formal Shoes"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Formal Shoes
+                        </p>
+
+                        <h2>
+                            Men's Formal Shoes
+                        </h2>
+
+                        <p class="product-description">
+                            Classic formal shoes suitable for
+                            office, meetings and special occasions.
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.4
+                        </p>
+
+                        <p class="product-price">
+                            ₹2,999
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="../product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCT 4 ================= -->
+                <div
+                    class="product-card"
+                    data-type="sandals"
+                    data-price="1499"
+                    data-rating="4.2"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="../images/products/sandals.jpg"
+                            alt="Women's Sandals"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Sandals
+                        </p>
+
+                        <h2>
+                            Women's Sandals
+                        </h2>
+
+                        <p class="product-description">
+                            Comfortable and stylish sandals
+                            for everyday use.
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.2
+                        </p>
+
+                        <p class="product-price">
+                            ₹1,499
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="../product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCT 5 ================= -->
+                <div
+                    class="product-card"
+                    data-type="slippers"
+                    data-price="999"
+                    data-rating="4.1"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="../images/products/slippers.jpg"
+                            alt="Comfortable Slippers"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Slippers
+                        </p>
+
+                        <h2>
+                            Comfortable Slippers
+                        </h2>
+
+                        <p class="product-description">
+                            Soft and lightweight slippers designed
+                            for everyday comfort.
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.1
+                        </p>
+
+                        <p class="product-price">
+                            ₹999
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="../product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCT 6 ================= -->
+                <div
+                    class="product-card"
+                    data-type="running-shoes"
+                    data-price="2799"
+                    data-rating="4.5"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="../images/products/running-shoes.jpg"
+                            alt="Sports Running Shoes"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Running Shoes
+                        </p>
+
+                        <h2>
+                            Sports Running Shoes
+                        </h2>
+
+                        <p class="product-description">
+                            Breathable sports shoes designed
+                            for running and outdoor activities.
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.5
+                        </p>
+
+                        <p class="product-price">
+                            ₹2,799
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="../product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCT 7 ================= -->
+                <div
+                    class="product-card"
+                    data-type="sneakers"
+                    data-price="3199"
+                    data-rating="4.4"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="../images/products/high-top-sneakers.jpg"
+                            alt="High Top Sneakers"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Sneakers
+                        </p>
+
+                        <h2>
+                            High Top Sneakers
+                        </h2>
+
+                        <p class="product-description">
+                            Trendy high-top sneakers with a
+                            stylish design for casual outfits.
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.4
+                        </p>
+
+                        <p class="product-price">
+                            ₹3,199
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="../product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRODUCT 8 ================= -->
+                <div
+                    class="product-card"
+                    data-type="sandals"
+                    data-price="1799"
+                    data-rating="4.3"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="../images/products/sports-sandals.jpg"
+                            alt="Sports Sandals"
+                        >
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Sandals
+                        </p>
+
+                        <h2>
+                            Sports Sandals
+                        </h2>
+
+                        <p class="product-description">
+                            Durable and comfortable sandals
+                            suitable for outdoor activities.
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.3
+                        </p>
+
+                        <p class="product-price">
+                            ₹1,799
+                        </p>
+
+
+                        <div class="product-buttons">
+
+                            <a
+                                href="../product-details.html"
+                                class="btn"
+                            >
+                                View Product
+                            </a>
+
+                            <button
+                                type="button"
+                                class="wishlist-btn"
+                                onclick="addToWishlist()"
+                            >
+                                ♡
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- No Products Message -->
+            <div
+                id="no-footwear"
+                class="no-products"
+                style="display: none;"
+            >
+
+                <h2>
+                    No Footwear Found
+                </h2>
+
+                <p>
+                    Try searching for another footwear item.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORY NAVIGATION ================= -->
+        <section class="category-navigation">
+
+            <h2>
+                Explore Other Categories
+            </h2>
+
+            <div class="category-links">
+
+                <a
+                    href="electronics.html"
+                    class="btn-secondary"
+                >
+                    📱 Electronics
+                </a>
+
+                <a
+                    href="clothes.html"
+                    class="btn-secondary"
+                >
+                    👕 Clothes
+                </a>
+
+                <a
+                    href="../products.html"
+                    class="btn-secondary"
+                >
+                    🛍️ All Products
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-container">
+
+
+            <!-- About -->
+            <div class="footer-column">
+
+                <h3>
+                    MyStore
+                </h3>
+
+                <p>
+                    Your simple online shopping destination
+                    for electronics, clothes, and footwear.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="../products.html">
+                    Products
+                </a>
+
+                <a href="../about.html">
+                    About Us
+                </a>
+
+                <a href="../contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Categories -->
+            <div class="footer-column">
+
+                <h3>
+                    Categories
+                </h3>
+
+                <a href="electronics.html">
+                    Electronics
+                </a>
+
+                <a href="clothes.html">
+                    Clothes
+                </a>
+
+                <a href="footwear.html">
+                    Footwear
+                </a>
+
+            </div>
+
+
+            <!-- Account -->
+            <div class="footer-column">
+
+                <h3>
+                    Account
+                </h3>
+
+                <a href="../login.html">
+                    Login
+                </a>
+
+                <a href="../register.html">
+                    Register
+                </a>
+
+                <a href="../cart.html">
+                    Cart
+                </a>
+
+                <a href="../orders.html">
+                    My Orders
+                </a>
+
+                <a href="../profile.html">
+                    Profile
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 MyStore. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Common JavaScript -->
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

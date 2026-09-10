@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Payment - MyStore</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+
+        <nav>
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">MyStore</a>
+            </div>
+
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories/electronics.html">
+                        Electronics
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories/clothes.html">
+                        Clothes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories/footwear.html">
+                        Footwear
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cart.html">
+                        Cart
+                    </a>
+                </li>
+
+                <li>
+                    <a href="login.html">
+                        Login
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= PAYMENT PAGE ================= -->
+    <main>
+
+        <section class="payment-section">
+
+            <div class="payment-container">
+
+                <!-- Page Heading -->
+                <div class="payment-header">
+
+                    <h1>
+                        Payment
+                    </h1>
+
+                    <p>
+                        Choose your preferred payment method.
+                    </p>
+
+                </div>
+
+
+                <div class="payment-content">
+
+
+                    <!-- ================= PAYMENT METHODS ================= -->
+                    <div class="payment-methods">
+
+                        <h2>
+                            Select Payment Method
+                        </h2>
+
+
+                        <form id="payment-form">
+
+
+                            <!-- Credit / Debit Card -->
+                            <div class="payment-option">
+
+                                <input
+                                    type="radio"
+                                    id="card"
+                                    name="payment-method"
+                                    value="card"
+                                >
+
+                                <label for="card">
+                                    💳 Credit / Debit Card
+                                </label>
+
+                            </div>
+
+
+                            <!-- Card Details -->
+                            <div
+                                class="card-details"
+                                id="card-details"
+                            >
+
+                                <div class="form-group">
+
+                                    <label for="card-number">
+                                        Card Number
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="card-number"
+                                        name="cardNumber"
+                                        placeholder="1234 5678 9012 3456"
+                                        maxlength="19"
+                                    >
+
+                                </div>
+
+
+                                <div class="card-row">
+
+                                    <div class="form-group">
+
+                                        <label for="expiry">
+                                            Expiry Date
+                                        </label>
+
+                                        <input
+                                            type="text"
+                                            id="expiry"
+                                            name="expiry"
+                                            placeholder="MM/YY"
+                                            maxlength="5"
+                                        >
+
+                                    </div>
+
+
+                                    <div class="form-group">
+
+                                        <label for="cvv">
+                                            CVV
+                                        </label>
+
+                                        <input
+                                            type="password"
+                                            id="cvv"
+                                            name="cvv"
+                                            placeholder="123"
+                                            maxlength="3"
+                                        >
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="card-name">
+                                        Name on Card
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="card-name"
+                                        name="cardName"
+                                        placeholder="Enter name on card"
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- UPI -->
+                            <div class="payment-option">
+
+                                <input
+                                    type="radio"
+                                    id="upi"
+                                    name="payment-method"
+                                    value="upi"
+                                >
+
+                                <label for="upi">
+                                    📱 UPI
+                                </label>
+
+                            </div>
+
+
+                            <!-- UPI Details -->
+                            <div
+                                class="upi-details"
+                                id="upi-details"
+                            >
+
+                                <div class="form-group">
+
+                                    <label for="upi-id">
+                                        UPI ID
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="upi-id"
+                                        name="upiId"
+                                        placeholder="example@upi"
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Cash on Delivery -->
+                            <div class="payment-option">
+
+                                <input
+                                    type="radio"
+                                    id="cod"
+                                    name="payment-method"
+                                    value="cod"
+                                >
+
+                                <label for="cod">
+                                    💵 Cash on Delivery
+                                </label>
+
+                            </div>
+
+
+                            <!-- Payment Error -->
+                            <p
+                                id="payment-error"
+                                class="error-message"
+                                style="display: none;"
+                            >
+                                Please select a payment method.
+                            </p>
+
+
+                            <!-- Pay Button -->
+                            <button
+                                type="submit"
+                                class="btn payment-btn"
+                            >
+                                Pay ₹29,498
+                            </button>
+
+                        </form>
+
+                    </div>
+
+
+                    <!-- ================= ORDER SUMMARY ================= -->
+                    <div class="payment-summary">
+
+                        <h2>
+                            Order Summary
+                        </h2>
+
+
+                        <!-- Product 1 -->
+                        <div class="payment-product">
+
+                            <div>
+
+                                <h3>
+                                    Samsung Galaxy
+                                </h3>
+
+                                <p>
+                                    Quantity: 1
+                                </p>
+
+                            </div>
+
+                            <span>
+                                ₹25,999
+                            </span>
+
+                        </div>
+
+
+                        <!-- Product 2 -->
+                        <div class="payment-product">
+
+                            <div>
+
+                                <h3>
+                                    Nike Running Shoes
+                                </h3>
+
+                                <p>
+                                    Quantity: 1
+                                </p>
+
+                            </div>
+
+                            <span>
+                                ₹3,499
+                            </span>
+
+                        </div>
+
+
+                        <hr>
+
+
+                        <!-- Subtotal -->
+                        <div class="summary-row">
+
+                            <span>
+                                Subtotal
+                            </span>
+
+                            <span id="payment-subtotal">
+                                ₹29,498
+                            </span>
+
+                        </div>
+
+
+                        <!-- Delivery -->
+                        <div class="summary-row">
+
+                            <span>
+                                Delivery
+                            </span>
+
+                            <span id="payment-delivery">
+                                Free
+                            </span>
+
+                        </div>
+
+
+                        <!-- Total -->
+                        <div class="summary-row total-row">
+
+                            <strong>
+                                Total
+                            </strong>
+
+                            <strong id="payment-total">
+                                ₹29,498
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PAYMENT SUCCESS ================= -->
+        <section
+            class="payment-success"
+            id="payment-success"
+            style="display: none;"
+        >
+
+            <div class="success-content">
+
+                <div class="success-icon">
+                    ✓
+                </div>
+
+                <h1>
+                    Payment Successful!
+                </h1>
+
+                <p>
+                    Thank you for shopping with MyStore.
+                </p>
+
+                <p>
+                    Your order has been placed successfully.
+                </p>
+
+                <p>
+                    <strong>Order ID:</strong>
+                    <span id="order-id">
+                        #MS1004
+                    </span>
+                </p>
+
+                <div class="success-buttons">
+
+                    <a
+                        href="orders.html"
+                        class="btn"
+                    >
+                        View My Orders
+                    </a>
+
+                    <a
+                        href="index.html"
+                        class="btn-secondary"
+                    >
+                        Continue Shopping
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-container">
+
+
+            <!-- About -->
+            <div class="footer-column">
+
+                <h3>
+                    MyStore
+                </h3>
+
+                <p>
+                    Your simple online shopping destination
+                    for electronics, clothes, and footwear.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="products.html">
+                    Products
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Categories -->
+            <div class="footer-column">
+
+                <h3>
+                    Categories
+                </h3>
+
+                <a href="categories/electronics.html">
+                    Electronics
+                </a>
+
+                <a href="categories/clothes.html">
+                    Clothes
+                </a>
+
+                <a href="categories/footwear.html">
+                    Footwear
+                </a>
+
+            </div>
+
+
+            <!-- Account -->
+            <div class="footer-column">
+
+                <h3>
+                    Account
+                </h3>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="register.html">
+                    Register
+                </a>
+
+                <a href="cart.html">
+                    Cart
+                </a>
+
+                <a href="orders.html">
+                    My Orders
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 MyStore. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Common JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

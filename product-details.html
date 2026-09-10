@@ -1,0 +1,598 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Details - MyStore</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+
+        <nav>
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">MyStore</a>
+            </div>
+
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories/electronics.html">
+                        Electronics
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories/clothes.html">
+                        Clothes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories/footwear.html">
+                        Footwear
+                    </a>
+                </li>
+
+                <li>
+                    <a href="cart.html">
+                        Cart
+                    </a>
+                </li>
+
+                <li>
+                    <a href="login.html">
+                        Login
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= PRODUCT DETAILS ================= -->
+    <main>
+
+        <section class="product-details-section">
+
+            <div class="product-details-container">
+
+
+                <!-- ================= PRODUCT IMAGE ================= -->
+                <div class="product-details-image">
+
+                    <img
+                        src="images/products/phone.jpg"
+                        alt="Samsung Galaxy Smartphone"
+                    >
+
+                </div>
+
+
+                <!-- ================= PRODUCT INFORMATION ================= -->
+                <div class="product-details-info">
+
+                    <!-- Category -->
+                    <p class="product-category">
+                        Mobiles & Electronics
+                    </p>
+
+
+                    <!-- Product Name -->
+                    <h1>
+                        Samsung Galaxy
+                    </h1>
+
+
+                    <!-- Rating -->
+                    <div class="product-rating">
+
+                        <span>
+                            ⭐⭐⭐⭐⭐
+                        </span>
+
+                        <span>
+                            4.5 / 5
+                        </span>
+
+                    </div>
+
+
+                    <!-- Price -->
+                    <div class="product-details-price">
+
+                        <span class="current-price">
+                            ₹25,999
+                        </span>
+
+                        <span class="old-price">
+                            ₹29,999
+                        </span>
+
+                        <span class="discount">
+                            13% OFF
+                        </span>
+
+                    </div>
+
+
+                    <!-- Description -->
+                    <div class="product-description">
+
+                        <h2>
+                            Product Description
+                        </h2>
+
+                        <p>
+                            Experience powerful performance and a
+                            smooth user experience with the Samsung
+                            Galaxy smartphone.
+                        </p>
+
+                        <p>
+                            This smartphone comes with a high-quality
+                            display, powerful processor, excellent
+                            camera, and long-lasting battery.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Features -->
+                    <div class="product-features">
+
+                        <h2>
+                            Key Features
+                        </h2>
+
+                        <ul>
+
+                            <li>
+                                High-quality display
+                            </li>
+
+                            <li>
+                                Powerful processor
+                            </li>
+
+                            <li>
+                                Excellent camera
+                            </li>
+
+                            <li>
+                                Long-lasting battery
+                            </li>
+
+                            <li>
+                                Fast charging support
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- ================= QUANTITY ================= -->
+                    <div class="product-quantity">
+
+                        <label for="quantity">
+                            Quantity:
+                        </label>
+
+                        <div class="quantity-control">
+
+                            <button
+                                type="button"
+                                class="quantity-btn"
+                                onclick="decreaseProductQuantity()"
+                            >
+                                -
+                            </button>
+
+                            <span id="product-quantity">
+                                1
+                            </span>
+
+                            <button
+                                type="button"
+                                class="quantity-btn"
+                                onclick="increaseProductQuantity()"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= ACTION BUTTONS ================= -->
+                    <div class="product-actions">
+
+                        <button
+                            type="button"
+                            class="btn"
+                            onclick="addToCart()"
+                        >
+                            🛒 Add to Cart
+                        </button>
+
+                        <button
+                            type="button"
+                            class="btn buy-now-btn"
+                            onclick="buyNow()"
+                        >
+                            Buy Now
+                        </button>
+
+                        <button
+                            type="button"
+                            class="wishlist-btn"
+                            onclick="addToWishlist()"
+                        >
+                            ♡ Add to Wishlist
+                        </button>
+
+                    </div>
+
+
+                    <!-- Message -->
+                    <p
+                        id="product-message"
+                        class="success-message"
+                        style="display: none;"
+                    >
+                        Product added successfully!
+                    </p>
+
+
+                    <!-- Product Information -->
+                    <div class="product-extra-info">
+
+                        <div class="extra-info-item">
+
+                            <strong>
+                                🚚 Delivery
+                            </strong>
+
+                            <p>
+                                Free delivery available
+                            </p>
+
+                        </div>
+
+
+                        <div class="extra-info-item">
+
+                            <strong>
+                                🔄 Returns
+                            </strong>
+
+                            <p>
+                                Easy returns available
+                            </p>
+
+                        </div>
+
+
+                        <div class="extra-info-item">
+
+                            <strong>
+                                🔒 Secure Payment
+                            </strong>
+
+                            <p>
+                                Safe and secure checkout
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RELATED PRODUCTS ================= -->
+        <section class="products-section">
+
+            <div class="section-header">
+
+                <h2>
+                    Related Products
+                </h2>
+
+                <p>
+                    You may also like these products.
+                </p>
+
+            </div>
+
+
+            <div class="product-container">
+
+
+                <!-- Related Product 1 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/products/headphones.jpg"
+                            alt="Wireless Headphones"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Wireless Headphones
+                        </h3>
+
+                        <p class="product-category">
+                            Electronics
+                        </p>
+
+                        <p class="product-price">
+                            ₹2,499
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.4
+                        </p>
+
+                        <a
+                            href="product-details.html"
+                            class="btn"
+                        >
+                            View Product
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Related Product 2 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/products/shirt.jpg"
+                            alt="Men's Casual Shirt"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Men's Casual Shirt
+                        </h3>
+
+                        <p class="product-category">
+                            Clothes
+                        </p>
+
+                        <p class="product-price">
+                            ₹1,299
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.3
+                        </p>
+
+                        <a
+                            href="product-details.html"
+                            class="btn"
+                        >
+                            View Product
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Related Product 3 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/products/shoes.jpg"
+                            alt="Nike Running Shoes"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Nike Running Shoes
+                        </h3>
+
+                        <p class="product-category">
+                            Footwear
+                        </p>
+
+                        <p class="product-price">
+                            ₹3,499
+                        </p>
+
+                        <p class="product-rating">
+                            ⭐ 4.6
+                        </p>
+
+                        <a
+                            href="product-details.html"
+                            class="btn"
+                        >
+                            View Product
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BACK TO PRODUCTS ================= -->
+        <div class="back-to-products">
+
+            <a
+                href="products.html"
+                class="btn-secondary"
+            >
+                ← Back to Products
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-container">
+
+
+            <!-- About -->
+            <div class="footer-column">
+
+                <h3>
+                    MyStore
+                </h3>
+
+                <p>
+                    Your simple online shopping destination
+                    for electronics, clothes, and footwear.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="products.html">
+                    Products
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Categories -->
+            <div class="footer-column">
+
+                <h3>
+                    Categories
+                </h3>
+
+                <a href="categories/electronics.html">
+                    Electronics
+                </a>
+
+                <a href="categories/clothes.html">
+                    Clothes
+                </a>
+
+                <a href="categories/footwear.html">
+                    Footwear
+                </a>
+
+            </div>
+
+
+            <!-- Account -->
+            <div class="footer-column">
+
+                <h3>
+                    Account
+                </h3>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="register.html">
+                    Register
+                </a>
+
+                <a href="cart.html">
+                    Cart
+                </a>
+
+                <a href="orders.html">
+                    My Orders
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 MyStore. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Common JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
